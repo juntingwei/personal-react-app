@@ -1,38 +1,841 @@
+html {
+  background-color: #000000;
+}
+
 .App {
+  margin: 0px;
+  border: 0px;
+  background: url('./images/Moke_blurred.jpg') no-repeat center fixed; 
+  background-size: cover;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Manrope', sans-serif;
+  font-family: 'Monoton', cursive;
+  font-family: 'Oxygen', sans-serif;
+  font-family: 'Tiro Telugu', serif;
+  }
+
+body {
+  margin: 0px;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:100vw;
+  height: 70px;
+  margin-top: 0px;
+  border-bottom: 1px solid #FFFFFF;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+#logo-img {
+  max-height: 40px;
+  margin: 14px 80px;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 3px solid #FFFFFF;
+  font-size: 40px;
+}
+
+.links-container {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 80px;
+}
+
+.links {
+  font-size: 18px;
+  color: #FFFFFF;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.125em;
+  padding: 24px 20px;
+  cursor: pointer;
+}
+
+.links:hover {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 500%);
+}
+
+#hero {
+  height: 100vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#hero-name {
+  font-family: 'Monoton', cursive;
+  color: #FFFFFF;
+  font-size: 100px;
+  font-weight: 400;
+  margin: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#hero-logo {
+  max-height: 300px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(0px 0px 30px rgba(34, 34, 34, 0.475));
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.social-links {
+  max-height: 50px;
+  margin: 40px 20px;
+}
+
+.social-links:hover {
+  cursor: pointer;
+}
+
+.flex-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-container {
+  max-height: 500px;
+  max-width: 850px;
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+
+  font-family: 'Oxygen', sans-serif;
+}
+
+#me-img {
+  max-height: 400px;
+  padding: 40px;
+  background-color: #FFFFFF;
+  margin-right: 60px;
+}
+
+#about-text-container {
+  text-align: left;
+  width: 400px;
+}
+
+#about-text-container > p {
+  font-size: 13px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+h2 {
+  font-family: 'Monoton', cursive;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+#learn-btn {
+  border: 1px solid black;
+  border-radius: 100px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  font-weight: 200;
+}
+
+#learn-btn:hover {
+  box-shadow: inset 0 0 10px #cfcfcf;
+  cursor: pointer;
+}
+
+/* Pharmacy Page Old */
+
+/* #pharmacy-page {
+  height: 100vh;
+}
+
+#intro-container {
+  width: 50vw;
+  position: relative;
+  right: -50%;
+  top: 40%;
+}
+
+#intro-container > h2 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+  margin: 5px 10px;
+  color: #FFFFFF;
+}
+
+#skills-container {
+  width: 500px;
+  height: 500px;
+  background-color: #0A2938;
+  position: relative;
+  right: -7%;
+  padding: 80px 0px;
+}
+
+#skills-container > * {
+  color: #FFFFFF;
+}
+
+.skills-name {
+  margin-left: 60px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#accreditations-container {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 40px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.accreditation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accredications-img {
+  height: 100px;
+  width: 100px;
+}
+
+#software-container {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 40px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.software-img {
+  height: 200px;
+  width: 200px;
+}
+
+#experience-block {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#experience-block > h2 {
+  font-family: 'Manrope', sans-serif;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 45px;
+  letter-spacing: 0.09em;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  margin-top: 30px;
+}
+
+.experience-label > p {
+  font-family: 'Manrope', sans-serif;
+  color: #FFFFFF;
+  margin-right: 40px;
+  text-align: right;
+  width: 200px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.experience-heading {
+  font-family: 'Manrope', sans-serif;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 0px;
+}
+
+.experience-desc {
+  font-family: 'Manrope', sans-serif;
+  color: #FFFFFF;
+  margin-top: 5px;
+  line-height: 20px;
+}
+
+#booking-container {
+  margin-left: 200px;
+  width: 500px;
+}
+
+#booking-container > h2 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+  margin: 5px 10px;
+  color: #FFFFFF;
+  padding-bottom: 50px;
+  margin-left: 0px;
+}
+
+#contact-btn {
+  font-family: 'Manrope', sans-serif;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+#contact-btn:hover {
+  box-shadow: inset 0 0 10px #cfcfcf;
+} */
+
+/* pharmacy page */
+
+#pharmacy {
+  background-color: #0B0B0B;
+  color: #FFFFFF;
+}
+
+#pharmacy-intro-page {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin-top: 10vh;
+}
+
+#hygeia-img {
+  max-width: 40vw;
+}
+
+#pharmacy-heading-container {
+  margin-left: 40px;
+  max-width: 45vw;
+}
+
+#pharmacy-heading-container > h1 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+  font-size: 6vh;
+  margin: 8px;
+}
+
+#experience-page {
+  height: 105vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+#experience-container {
+  height: 50vh;
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 3vh;
+  margin: 0px;
+}
+
+#experience-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 4.5vh;
+  text-align: center;
+  margin: 0px;
+  color: #e3e3e3;
+}
+
+#experience-text {
+  line-height: 1.5em;
+  letter-spacing: 0.04em;
+}
+
+#experience-text > a {
+  font-size: 5vh;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+#resume-link {
+  margin-right: 30px;
+  margin-top: 40px;
+  font-size: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#pharmacy-contact-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#request-availability-container {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.request-availability {
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+  color: #C0C0C0;
+  font-size: 30vh;
+  line-height: 250px;
+}
+
+#request-btn {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 100px;
+  padding: 10px 15px;
+  font-weight: 200;
+  text-decoration: none;
+  font-family: 'Oxygen', sans-serif;
+  color: #ffffff;
+  letter-spacing: 00.05em;
+  margin-top: 5vh;
+}
+
+#work-btn:hover {
+  cursor: pointer;
+}
+
+/* hover feature */
+
+.et-hover {
+  display: none;
+  position: relative;
+  width: 60vw;
+  transition: .5s;
+  background: #0B0B0B;
+  border: 1px dashed red;
+}
+
+/* #larger-teams-hover {
+  bottom: 8vh;
+  left: -20px;
+} */
+
+/* hover-display */
+
+#et-sole-charge {
+  position: relative;
+}
+
+#et-sole-charge:hover #sole-charge-hover {
+  display:inherit;
+}
+
+#et-managing-pharmacies {
+  position: relative;
+}
+
+#et-managing-pharmacies:hover #managing-pharmacies-hover {
+  display:inherit;
+}
+
+#et-rural-dispensaries {
+  position: relative;
+}
+
+#et-rural-dispensaries:hover #rural-dispensaries-hover {
+  display:inherit;
+}
+
+#et-larger-teams {
+  position: relative;
+}
+
+#et-larger-teams:hover #larger-teams-hover {
+  display:inherit;
+}
+
+#et-counties-manukau-dhb {
+  position: relative;
+}
+
+#et-counties-manukau-dhb:hover #counties-manukau-dhb-hover {
+  display:inherit;
+}
+
+/* software page */
+
+#software-page {
+  background-color: #E9E9E9; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+}
+
+#intro-text-container {
+  text-align: center;
+  margin-top: 30vh;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#intro-text-container > * > h2 {
+  font-family: 'Manrope', sans-serif;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 60px;
+  color: #415463;
+  letter-spacing: 0.05em;
+}
+
+#intro-text-container > * > p {
+  font-family: 'Manrope', sans-serif;
+  margin: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#line-break {
+  height: 6vh;
+  margin-top: 12vh;
+  margin-bottom: 12vh;
+  width: 1px;
+  border-left: 2px solid black;
+}
+
+#current-projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#current-projects-container > h3 {
+  font-family: 'Manrope', sans-serif;
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 30px;
+  color: #415463;
+  letter-spacing: 0.05em;
+  margin-bottom: 150px;
+}
+
+.project-container {
+  height: 200px;
+  width: 800px;
+  text-align: center;
+  margin: 10px;
+  margin-top: 30px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+}
+
+.project-container > h2 {
+  position: relative;
+}
+
+#coming-soon {
+  background-color: #C0C0C0;
+  transition: 0.3s;
+}
+
+#coming-soon > h2 {
+  font-family: 'Manrope', sans-serif;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+
+#Ωhm > h2 {
+  font-family: 'Tiro Telugu', 'Palatino', Times, serif;
+  font-weight: 300;
+  margin: 10px;
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+
+#Ωhm {
+  background-color: #1e1e1e;
+
+}
+
+#STOCKRX > h2 {
+  font-family: 'Manrope', sans-serif;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+
+.fader {
+  position: absolute;
+  height: 200px;
+  width: 800px;
+  background-color: rgba(26, 26, 26, 0.81);
+  transition: 0.3s;
+}
+
+#contact-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#work-with-me-container {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-top: 90px;
+  position: absolute;
+}
+
+.work-with-me {
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+  color: #C0C0C0;
+  font-size: 300px;
+  margin-bottom: 80px;
+  line-height: 250px;
+}
+
+#work-btn {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 100px;
+  padding: 10px 15px;
+  margin-top: 200px;
+  font-weight: 200;
+  text-decoration: none;
+  font-family: 'Oxygen', sans-serif;
+  color: #000000;
+  letter-spacing: 00.05em;
+}
+
+#work-btn:hover {
+  cursor: pointer;
+}
+
+/* onHover Styling Nav */
+
+.nav-dark > a {
+  color: #545758;
+}
+
+/* onHover Styling Software page */
+
+/* for ohm-hovered */
+
+#software-page.ohm-hovered {
+  background-color: #0D2527; 
+}
+
+#intro-text-container.ohm-hovered > * > h2 {
+  color: #FFFFFF;
+}
+
+#intro-text-container.ohm-hovered {
+  color: #FFFFFF;
+}
+
+#line-break.ohm-hovered  {
+  border-left: 2px solid #FFFFFF;
+}
+
+#current-projects-container.ohm-hovered > h3 {
+  color: #ffffff
+}
+
+#coming-soon.ohm-hovered {
+  background-color: #2D4547;
+}
+
+#STOCKRX > .fader.ohm-hovered {
+  background-color: rgba(45, 69, 71, 1);
+}
+
+#Ωhm > .fader.ohm-hovered {
+  background-color: rgba(100, 113, 147, 0);
+}
+
+#Ωhm:hover {
+  transform: scale(1.2);
+}
+
+/* for stockrx */
+
+#software-page.stockrx-hovered {
+  background-color: #9AADDE; 
+}
+
+#intro-text-container.stockrx-hovered > * > h2 {
+  color: #2A363F;
+}
+
+#intro-text-container.stockrx-hovered {
+  color: #2A363F;
+}
+
+#line-break.stockrx-hovered  {
+  border-left: 2px solid #2A363F;
+}
+
+#current-projects-container.stockrx-hovered > h3 {
+  color: #2A363F
+}
+
+#Ωhm > .fader.stockrx-hovered {
+  background-color: rgba(100, 113, 147, 1);
+}
+
+#coming-soon.stockrx-hovered {
+  background-color: #647193;
+}
+
+#STOCKRX > .fader.stockrx-hovered {
+  background-color: rgba(100, 113, 147, 0);
+}
+
+#STOCKRX:hover {
+  transform: scale(1.2);
+}
+
+/* contact page */
+
+#contact-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#get-in-touch-container {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.get-in-touch {
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 30vh;
+  line-height: 250px;
+}
+
+#get-in-touch-btn {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 100px;
+  padding: 10px 15px;
+  font-weight: 200;
+  text-decoration: none;
+  font-family: 'Oxygen', sans-serif;
+  color: #ffffff;
+  letter-spacing: 00.05em;
+  margin-top: 5vh;
+}
+
+/* imported */
+
+.section{
+  width:80%;
+  margin:0 auto;
+  height:30vh;
+  position:relative;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+
+#pharmacy-section {
+  height: 10vh;
+}
+
+.hscroll-line {
+	bottom:30px;
+	height: 2px;
+	position: absolute;
+	overflow: hidden;
+  width:60px;
+  transform: rotate(90deg);
+  transform-origin:50% 50%;
+ 
+}
+
+
+.hscroll-line::before,
+.hscroll-line::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: ""
+}
+
+.hscroll-line:before {
+	background: #0000003b;
+}
+
+.hscroll-line::after {
+	background: #717171;
+	animation: move 3s infinite
+}
+
+#scroll-line-pharmacy:before {
+	background: #e5e5e5;
+}
+
+#scroll-line-pharmacy::after {
+	background: #717171;
+	animation: move 3s infinite
+}
+
+@keyframes move {
+	0% {
+		transform: translate3d(-200%, 0, 0)
+	}
+	60% {
+		transform: translate3d(100%, 0, 0)
+	}
+	100% {
+		transform: translate3d(100%, 0, 0)
+	}
 }
