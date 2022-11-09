@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/personal-react-app/static/css/main.649ddff5.css",
+    "main.js": "/personal-react-app/static/js/main.92380efd.js",
+    "static/js/787.5480e000.chunk.js": "/personal-react-app/static/js/787.5480e000.chunk.js",
+    "static/media/Me.png": "/personal-react-app/static/media/Me.9248be9bad45c969fbe8.png",
+    "static/media/Moke_blurred.jpg": "/personal-react-app/static/media/Moke_blurred.5eec757f9017c99739fd.jpg",
+    "static/media/ohm.png": "/personal-react-app/static/media/ohm.1b717da544b1390395fb.png",
+    "static/media/stockrx.jpeg": "/personal-react-app/static/media/stockrx.d9fb27f03b7726513ca8.jpeg",
+    "static/media/hygeia.png": "/personal-react-app/static/media/hygeia.be29d4f6f6b44d4dc17b.png",
+    "static/media/Logo.png": "/personal-react-app/static/media/Logo.3d1bca5d525e3e6d7cb9.png",
+    "static/media/Logo-dark.png": "/personal-react-app/static/media/Logo-dark.ffc9e67cbdf8228ffcaf.png",
+    "static/media/Logo-light.png": "/personal-react-app/static/media/Logo-light.9d59262187f25561afd0.png",
+    "static/media/CV 922.pdf": "/personal-react-app/static/media/CV 922.a892fe4c4d2772ab2f7a.pdf",
+    "static/media/Instagram.png": "/personal-react-app/static/media/Instagram.8ab08446a1cc038721e6.png",
+    "static/media/Email.png": "/personal-react-app/static/media/Email.a6706d7c760baf9c9cca.png",
+    "static/media/Github.png": "/personal-react-app/static/media/Github.467ac9a7c65281c0e5b2.png",
+    "static/media/Linkedin.png": "/personal-react-app/static/media/Linkedin.726b4d49e0fe78a159aa.png",
+    "index.html": "/personal-react-app/index.html",
+    "main.649ddff5.css.map": "/personal-react-app/static/css/main.649ddff5.css.map",
+    "main.92380efd.js.map": "/personal-react-app/static/js/main.92380efd.js.map",
+    "787.5480e000.chunk.js.map": "/personal-react-app/static/js/787.5480e000.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.649ddff5.css",
+    "static/js/main.92380efd.js"
+  ]
+}
